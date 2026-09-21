@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int midterm,final,average;
+
+    printf("Enter your midterm grade: ");
+    scanf("%d",&midterm);
+
+    printf("Enter your final grade: ");
+    scanf("%d",&final);
+
+    average = (midterm * 40 / 100) + (final * 60 / 100);
+
+    printf("Your course average: %d\n",average);
+
+    if(average >= 60)
+    {
+        printf("Congratulations,you passed the course");
+    }
+    else
+    {
+       printf("Please try again next year.");
+    }
+    return 0;
+}
